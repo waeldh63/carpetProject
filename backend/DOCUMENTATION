@@ -1,0 +1,21 @@
+to run this project go to ./config/config.js
+and change the details of the database connection 
+the run in terminal npm install 
+then  run in terminal npx sequelize db:migrate
+then  run in terminal node app.js
+
+
+
+IN THIS PROJECT WE HAVE
+
+- MIGRATION FOLDER THAT ADD TO THE DATABASE ALL CHANGES WHEN WE RUN npx sequelize db:migrate
+IF WE WANT TO CREATE A NEW TABLE WE RUN 
+ (npx sequelize model:generate --name [NAME OF TABLE] --attributes clientId:integer,image:blob,status:string,price:integer )THIS IS AN EX
+
+
+- MODEL FOLDER CONTAIN THE MODEL OF ALL TABLE WE HAVE IN THE DATABASE 
+
+- SERVICES FOLDER CONTAINS ALL THE FUNCTION THAT INTERACT DIRECTLY WITH THE DATABASE USING SEQUELIZE LIBRARY FOR PROTECTION 
+
+
+APP.JS FILE HERE WE GENERATE THE API THAT LINK THE DATABASE INTERACTION WITH THE FRONT END
